@@ -37,7 +37,7 @@ def button():
 async def _(client, message):
 	user = message.from_user # Kullanıcın Kimliğini Alalım
 
-	await message.reply_text(text="**🙋🏻‍♂️ Salam {}!**\n\n__Mən [Ayxan](https://t.me/Ayxxan) tərəfindən kodlanmış doğruluq-cəsarət botuyam :)__\n\n**Əlavə məlumat üçün => /help** ".format(
+	await message.reply_text(text="**🙋🏻‍♂️ Salam {}!**\n\n__Mən [Ayxan](https://t.me/Ayxxan) tərəfindən kodlanmış doğruluq-cəsarət botuyam :)__\n\n**Əlavə məlumat üçün => /komek** ".format(
 		user.mention, # Kullanıcı'nın Adı
 		),
 	disable_web_page_preview=True, # Etiketin Önizlemesi Olmaması İcin Kullanıyoruz
@@ -50,11 +50,11 @@ def d_or_c(user_id):
 	BUTTON += [[InlineKeyboardButton(text="💪🏻 Cəsarət", callback_data = " ".join(["c_data",str(user_id)]))]]
 	return InlineKeyboardMarkup(BUTTON)
 # Help komandasını əlavə edək
-@K_G.on_message(filters.command("help"))
+@K_G.on_message(filters.command("komek"))
 async def _(client, message):
 	user = message.from_user
 
-	await message.reply_text(text="{} Botumuzdan istifadə etdiyin üçün təşəkkürlər!\n!\n\nOyunu başlatmaq üçün- /basla\nSual əlavə etmək üçün- /elavet.n\Xoş oyunlar 🥳".format(user.mention),
+	await message.reply_text(text="{} Botumuzdan istifadə etdiyin üçün təşəkkürlər👻!\n\nOyunu başlatmaq üçün- /basla\nSual əlavə etmək üçün- /elavet".format(user.mention),
 		)
 @K_G.on_message(filters.command("repoxana"))
 async def _(client, message):
