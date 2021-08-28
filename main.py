@@ -54,20 +54,19 @@ def d_or_c(user_id):
 async def _(client, message):
 	user = message.from_user
 
-	await message.reply_text(text="{} Botumuzdan istifadə etdiyin üçün təşəkkürlər👻!\n\nOyunu başlatmaq üçün- /basla\nSual əlavə etmək üçün- /elavet".format(user.mention),
+	await message.reply_text(text="{} Botumuzdan istifadə etdiyin üçün təşəkkürlər👻!\n\nOyunu başlatmaq üçün- /basla\nSual əlavə etmək üçün- /artir".format(user.mention),
 		)
-@K_G.on_message(filters.command("repoxana"))
+@K_G.on_message(filters.command("artir"))
 async def _(client, message):
 	user = message.from_user
 
-	await message.reply_text(text="**{} Dostum! [Repoxana](https://t.me/Repoxana) telegramda olan bir çox bot'un reposunu paylaşır.İzləmədə qal 😉**".format(user.mention),
+	await message.reply_text(text="**{} [Ayxan](https://t.me/Ayxxan) tərəfindən yoxlanıldıqdan sonra artırılacaq.😉**".format(user.mention),
 		)
 @K_G.on_message(filters.command("basla"))
 async def _(client, message):
 	user = message.from_user
 
-	await message.reply_text(text="{} İsdədiyin Sual Növünü Seç!".format(user.mention),
-		reply_markup=d_or_c(user.id)
+	await message.reply_text(text="**https://telegra.ph/file/3d6a00a8c1459607dec66.mp4**".format(user.mention),
 		)
 	
 	# Dc Komutunu Oluşturalım
