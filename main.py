@@ -37,7 +37,7 @@ def button():
 async def _(client, message):
 	user = message.from_user # Kullanıcın Kimliğini Alalım
 
-	await message.reply_text(text="**🙋🏻‍♂️ Salam {}!**\n\n__Mən [Repoxana](https://t.me/Repoxana) tərəfindən tərcümə edilmiş dc botuyam :)__\n\n**Əlavə məlumat üçün => /help** ".format(
+	await message.reply_text(text="**🙋🏻‍♂️ Salam {}!**\n\n__Mən [Ayxan](https://t.me/Ayxxan) tərəfindən yaradılmış dc botuyam :)__\n\n**Əlavə məlumat üçün => /help** ".format(
 		user.mention, # Kullanıcı'nın Adı
 		),
 	disable_web_page_preview=True, # Etiketin Önizlemesi Olmaması İcin Kullanıyoruz
@@ -64,7 +64,7 @@ async def _(client, message):
 		)
 
 # Dc Komutunu Oluşturalım
-@K_G.on_message(filters.command("dc"))
+@K_G.on_message(filters.command("basla"))
 async def _(client, message):
 	user = message.from_user
 
