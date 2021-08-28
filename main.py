@@ -56,6 +56,12 @@ async def _(client, message):
 
 	await message.reply_text(text="**{} Dostum! /dc yazaraq oyunu başlada bilərsən.Xoş oyunlar 🥳**".format(user.mention),
 		)
+@K_G.on_message(filters.command("repoxana"))
+async def _(client, message):
+	user = message.from_user
+
+	await message.reply_text(text="**{} Dostum! [Repoxana](https://t.me/Repoxana) telegramda olan bir çox bot'un reposunu paylaşır.İzləmədə qal 😉**".format(user.mention),
+		)
 
 # Dc Komutunu Oluşturalım
 @K_G.on_message(filters.command("dc"))
@@ -103,27 +109,27 @@ async def _(client, callback_query):
 
 ############################
     # Sudo islemleri #
-@K_G.on_message(filters.command("cekle"))
+@K_G.on_message(filters.command("cartir"))
 async def _(client, message):
   global MOD
   user = message.from_user
   
   if user.id not in OWNER_ID:
-    await message.reply_text("**[⚠]** **Sen Yetkili Birisi degilsin!!**")
+    await message.reply_text("**[⚠️]** **Sənin Botda Yetkin Yoxdur!!**")
     return
-  MOD="cekle"
-  await message.reply_text("**[⛔]** **Eklenmesini istedigin Cesaret Sorunu Giriniz!**")
+  MOD="cartir"
+  await message.reply_text("**[➕]** **Əlavə edilməsini isdədiyiniz sualı yazın!**")
   
-@K_G.on_message(filters.command("dekle"))
+@K_G.on_message(filters.command("dartir"))
 async def _(client, message):
   global MOD
   user = message.from_user
   
   if user.id not in OWNER_ID:
-    await message.reply_text("**[⚠]** **Sen Yetkili Birisi degilsin!!**")
+    await message.reply_text("**[⚠️]** **Sənin Botda Yetkin Yoxdur!!**")
     return
-  MOD="cekle"
-  await message.reply_text("**[⛔]** **Eklenmesini istedigin Dogruluk Sorunu Giriniz!**")
+  MOD="cartir"
+  await message.reply_text("**[➕]** **Əlavə edilməsini isdədiyiniz sualı yazın!**")
 
 @K_G.on_message(filters.private)
 async def _(client, message):
@@ -137,12 +143,12 @@ async def _(client, message):
     if MOD=="cekle":
       C_LİST.append(str(message.text))
       MOD=None
-      await message.reply_text("**[⛔]** __Metin Cesaret Sorusu Olarak Eklendi!__")
+      await message.reply_text("**[⛔]** __Cəsarət Sualı Olaraq Əlavə edildi!__")
       return
     if MOD=="dekle":
       C_LİST.append(str(message.text))
       MOD=None
-      await message.reply_text("**[⛔]** __Metin Dogruluk Sorusu Olarak Eklendi!__")
+      await message.reply_text("**[⛔]** __Cəsarət Sualı Olaraq Əlavə edildi!__")
       return
 ############################
 
