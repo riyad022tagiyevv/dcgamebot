@@ -54,7 +54,7 @@ def d_or_c(user_id):
 async def _(client, message):
 	user = message.from_user
 
-	await message.reply_text(text="{} Botumuzdan istifadə etdiyin üçün təşəkkürlər!/n/basla yazaraq oyunu başlada bilərsən.Xoş oyunlar 🥳/n".format(user.mention),
+	await message.reply_text(text="{} Botumuzdan istifadə etdiyin üçün təşəkkürlər!\n!\n\nOyunu başlatmaq üçün- /basla\nSual əlavə etmək üçün- /elavet.n\Xoş oyunlar 🥳".format(user.mention),
 		)
 @K_G.on_message(filters.command("repoxana"))
 async def _(client, message):
