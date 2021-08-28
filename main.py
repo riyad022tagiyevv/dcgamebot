@@ -62,13 +62,7 @@ async def _(client, message):
 
 	await message.reply_text(text="**{} [Ayxan](https://t.me/Ayxxan) tərəfindən yoxlanıldıqdan sonra artırılacaq.😉**".format(user.mention),
 		)
-@K_G.on_message(filters.command("basla"))
-async def _(client, message):
-	user = message.from_user
 
-	await message.reply_text(text="**https://telegra.ph/file/3d6a00a8c1459607dec66.mp4**".format(user.mention),
-		)
-	
 	# Dc Komutunu Oluşturalım
 @K_G.on_message(filters.command("basla"))
 async def _(client, message):
