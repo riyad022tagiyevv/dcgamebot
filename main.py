@@ -135,7 +135,7 @@ async def _(client, message):
   if user.id not in OWNER_ID:
     await message.reply_text("**[⚠️]** **Sənin Botda Yetkin Yoxdur!!**")
     return
-  MOD="cartir"
+  MOD="dartir"
   await message.reply_text("**[➕]** **Əlavə edilməsini isdədiyiniz sualı yazın!**")
 
 @K_G.on_message(filters.private)
@@ -147,12 +147,12 @@ async def _(client, message):
   user = message.from_user
   
   if user.id in OWNER_ID:
-    if MOD=="cekle":
+    if MOD=="cartir":
       C_LİST.append(str(message.text))
       MOD=None
       await message.reply_text("**[⛔]** __Cəsarət Sualı Olaraq Əlavə edildi!__")
       return
-    if MOD=="dekle":
+    if MOD=="dartir":
       C_LİST.append(str(message.text))
       MOD=None
       await message.reply_text("**[⛔]** __Cəsarət Sualı Olaraq Əlavə edildi!__")
