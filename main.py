@@ -37,7 +37,7 @@ def button():
 async def _(client, message):
 	user = message.from_user # Kullanıcın Kimliğini Alalım
 
-	await message.reply_text(text="**🙋🏻‍♂️ Salam {}!**\n\n__Mən [Ayxan](https://t.me/Ayxxan) tərəfindən kodlanmış doğruluq-cəsarət botuyam :)__\n\n**Əlavə məlumat üçün => /komek** ".format(
+	await message.reply_text(text="**🙋🏻‍♂️ Salam {}!**\n\n__Mən [Zahid](https://t.me/TheZahid) tərəfindən tərcümə edilmiş doğruluq-cəsarət botuyam :)__\n\n**Əlavə məlumat üçün => /komek** ".format(
 		user.mention, # Kullanıcı'nın Adı
 		),
 	disable_web_page_preview=True, # Etiketin Önizlemesi Olmaması İcin Kullanıyoruz
@@ -50,6 +50,13 @@ def d_or_c(user_id):
 	BUTTON += [[InlineKeyboardButton(text="💪🏻 Cəsarət", callback_data = " ".join(["c_data",str(user_id)]))]]
 	return InlineKeyboardMarkup(BUTTON)
 # Help komandasını əlavə edək
+@K_G.on_message(filters.command("zahid"))
+async def _(client, message):
+	user = message.from_user
+
+	await message.reply_text(text="{} Məni tərcümə edən[Zahid](https://t.me/TheZahid) Təşəkkür edirəm".format(user.mention),
+		)
+
 @K_G.on_message(filters.command("komek"))
 async def _(client, message):
 	user = message.from_user
