@@ -1,6 +1,6 @@
 C_LİST=[
 	"Seçdiyiniz bir sosial media hesabından çox çirkin bir şəkil paylaşın.","Telefonunuzdakı mesaj bölməsini açın, gözlərinizi yumun və təsadüfi bir adama random bir mesaj göndərin.",
-	"Növbəti 5 dəqiqə ərzində söylədiyiniz hər şeydən sonra "məə" deyəcəksiniz",
+	"Növbəti 5 dəqiqə ərzində söylədiyiniz hər şeydən sonra məə deyəcəksiniz",
 	"Önümüzdəki 5 dəqiqədə kiminsə heyvanı olun.","İnstagramınızı oyunçulardan birinə verin. Hər yerə 5 dəqiqə baxmaq sərbəstdir.",
 	"Oyundan bir insana serenad edin (oğlan qız olarsa, qız oğlan olarsa)","Növbəti 3 növbədə ləhcə ilə danışın.",
 	"3 dəqiqəlik uşaq olun!","Telefonunuzdaki ən sevmədiyiniz şəkili göndərin","Sevdiyiniz şəkli göndərin",
