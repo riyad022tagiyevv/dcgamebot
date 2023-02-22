@@ -5,7 +5,7 @@ C_LİST=[
 	"Oyundan bir insana serenad edin (oğlan qız olarsa, qız oğlan olarsa)","Növbəti 3 növbədə ləhcə ilə danışın.",
 	"3 dəqiqəlik uşaq olun!","Telefonunuzdaki ən sevmədiyiniz şəkili göndərin","Sevdiyiniz şəkli göndərin",
 	"Whatsapp da 2 söhbətinizi göstərin","Şəxsi mesajlarınızı əldə edin və qrupa göndərin","Whatsapp -da son söhbətinizi bura atın",
-	"Bir dəftərə 20 dəfə "mən malam" yaz və şəklini at","Telegramda son söhbətinizi bura atın","Biona +18 bir cümlə yaz; 31 dəqiqə qalmalıdı.!",
+	"Bir dəftərə 20 dəfə "men malam" yaz və şəklini at","Telegramda son söhbətinizi bura atın","Biona +18 bir cümlə yaz; 31 dəqiqə qalmalıdı.!",
 	"Galerinin bir hissəsini ss alıb bura at","Galerindəki 16-cı şəkili at.","Instagram ya da telegramdan tanımadığın birinə gülməli olmuyan bir lətifə danış.",
 	"Layla oxuyaraq səs at","Bugünüvə aid qısa bir hekayə qur.","Whatsapp’da danışdığın adamların ssini at",
 	"Qrupun istifadəçilər siyahısına gir ve 7-ci adama anlıq at.","Ən son danışdığın adama \"Dayıgil necədi?\" deyə mesaj at.",
